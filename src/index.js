@@ -10,8 +10,10 @@ import store from './store'
 // eslint-disable-next-line react/no-deprecated
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    {/* <App /> */}
+    <div>Hello World</div>
   </Provider>,
+  // console.log(${document.getElementById('root')})
   document.getElementById('root'),
 )
 
