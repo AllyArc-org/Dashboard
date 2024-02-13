@@ -13,11 +13,11 @@ import {
   CCardBody,
   CCol,
   CRow,
+  CButton,
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { cilHamburgerMenu } from '@coreui/icons'
 import { Link } from 'react-router-dom'
-import { CButton } from '@coreui/react/dist'
 
 async function updateSkillLevel(student) {
   const grade = student.grade

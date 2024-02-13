@@ -1,0 +1,18 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+
+const firebaseConfig = {
+  apiKey:
+    'MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCri/mf49byZy5x\nkGGysgZgyCp7p9PrrMhtD3LmUuvQ9sq2Dyo1lDCcdQ9CA5ivNVCqQpMc8ib8pL2w\nraRX83PMo1Ke8aHjz6N6aQDx+SQJ9gEyOnHw15/xDbMlED/w7UYiXW6gYWRRiDOu\nW+V41zQ0urDJaGLZWkaau4ICRkFiAD2yU/OKFRc4ayLWgIm0k12bI+KBJQvB3zSl\nS9/YjMoG7Lchdl1poNLEEAWCwlBEQStMhTUfIfYvGYqlf5U7A4VCT/0wOy2iBgpX\n5gckYQ9g7AFPihs0E3mdMOrl+TLcg+itqaTcnHD8oE9or+xOLc7oOJVRI9YVGfrG\n+koBup03AgMBAAECggEAG98NoHCG80etWuPKORtwgC1KrbWKRQ+uWVMkaA8lONm9\nUfrBG7G8e3xkuA/X25uYxAOLXa1q2oBflhgti+FGOVjNwHziFckeC/I0e5vuwt7h\nDzVCCY8sRsti2veQE/JRA0iqg8yJsoTOX2/sfAd8TWw0SJI5ATcIIqAAEvjcKvI6\nb62/+6bKcvoSIJksXQ6vROx+4asa6BITXx+Ee+aS1pu6jBwpEICnmdZoN0/q3vtJ\nWKqJohggXx/zun9bNuNclU5lr3EftkZfWB73IWrsheVufmCnZfkQYHiZLBmswMqn\nR5mWUF5vaSQ93K+B3pZIDGGuR/nP3ne4q30VpTLGAQKBgQDixFPnt/UaaITiwVSC\nvzWIALER+hdOfK4HspFN/cGhsDj1ySMLsihWjPz1SS9K8zkeJFgnb39Iz3LJ6bEW\nhsgHCqBRNoapHW3JcmQDmfKs4h04t1cUpnVUdcV4xHfv+77obqOpZYQ51HHpJ5xT\nkevgFwQ+5ee2IKvMaLOwulH3NwKBgQDBqUteBjjs12uTQet2TCmiZv3EwTyZq9Rp\nxlhXfE4s157ENsXzDLQxMNv7GCXoYDfum67Gey9DJOA2vkHE9lPH1eHK37Mmy35v\n4zyGbTjpaO0blex7gCm0AV+FddJLvATWAWntxzGsd1t9r3FK8JQL7sVp8AXoqJD3\nnVMyoYOKAQKBgGPbJkOEexcc7V9Y2NkWUAFKpK6Q3VB/kLbtCBU659hGXF7HKnqN\nAjxSq1Vr27p6bi16vaLn8znht99327ZatZx8Lmp0w0mXHvA1Qhtf4EAG9e0yttLu\nFf6SOdnbUiFITyHVDpaakGZSybJs8ebO+/payFDWNnm5200Q0gfBlDRzAoGBAJJN\n+qE65DCRgjTKvT8uxNlrI1ZMgiK6PIv4i270ev7HmqszkhJPS6ZJ+jbVBHZsknTR\n6pUKJSd9qWHSFE/fpGW5QI6Kt4acf5W5v1TzGObFHTQU7IZUyayyyN5Dp68NiT2/\n7a30KaPYvCbUrytlWwM0zLF+4oflKTfYBC2g9YYBAoGAW2hc7zCwV4Qted0UxKi4\nuTWYuosx4cFr4y2cwyoIwRlmcurdBgnaleJtLtVGHe/FzmNYqzjDKXyzk2JDYV5p\nQa4Czk+ym7c7zykVDmfLRGkLG4KghSAcgvaCeIaWh0HFJW0BsLszIj7KOpl7jHqD\nkFzYOnon4ox5MgFSLCaC56A=',
+  authDomain: 'allyarc-edu.firebaseapp.com',
+  databaseURL: 'https://allyarc-edu-default-rtdb.firebaseio.com/',
+  projectId: 'allyarc-edu',
+  storageBucket: 'allyarc-edu.appspot.com',
+  messagingSenderId: '380679199682',
+  appId: '1:380679199682:web:06009ba5f52bcfe8ac545b',
+}
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig)
+export default getFirestore()

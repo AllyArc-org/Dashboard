@@ -4,6 +4,9 @@ import { CContainer, CSpinner } from '@coreui/react'
 
 // routes config
 import routes from '../routes'
+const StudentSinglePage = React.lazy(() => import('../views/student/studentPage/studentSinglePage'))
+const StudentPage = React.lazy(() => import('../views/student/studentPage/studentPage'))
+const NotFound = React.lazy(() => import('../views/pages/page404/Page404'))
 
 const AppContent = () => {
   return (
@@ -24,6 +27,14 @@ const AppContent = () => {
             )
           })}
           <Route path="/" element={<Navigate to="dashboard" replace />} />
+          <Route path="/student">
+            <Route index element={<StudentPage />} />
+            <Route
+              path=":id/:grade/:name/:contact/:careGiverEmail/:careGiverContact/:creativity/:logical/:time/:visual"
+              element={<StudentSinglePage />}
+            />
+          </Route>
+          <Route path="*" element={<NotFound />} />{' '}
         </Routes>
       </Suspense>
     </CContainer>
