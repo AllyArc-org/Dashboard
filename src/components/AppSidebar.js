@@ -17,7 +17,7 @@ import { AppSidebarNav } from './AppSidebarNav'
 import { logo } from 'src/assets/brand/logo'
 import { sygnet } from 'src/assets/brand/sygnet'
 // impor/t logoBlack from '../assets/brand/allyarc-logo-black.svg'
-import logoWhite from '../assets/brand/logo-black-transparent.svg'
+import logoWhite from '../assets/brand/allyarc-logo-transparent.svg'
 
 import SimpleBar from 'simplebar-react'
 import 'simplebar-react/dist/simplebar.min.css'
@@ -43,10 +43,7 @@ const AppSidebar = () => {
     >
       <CSidebarHeader className="border-bottom">
         <CSidebarBrand to="/">
-          {/* <CIcon customClassName="sidebar-brand-full" icon={logo} height={32} /> */}
           <img className="d-block w-100" src={logoWhite} alt="slide 2" />
-
-          <CIcon customClassName="sidebar-brand-narrow" icon={sygnet} height={32} />
         </CSidebarBrand>
         <CCloseButton
           className="d-lg-none"
