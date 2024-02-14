@@ -6,7 +6,7 @@ const AppFooter = () => {
     <CFooter className="px-4">
       <div>
         <a href="https://allyarc-edu.web.app" target="_blank" rel="noopener noreferrer">
-          CoreUI
+          AllyArc
         </a>
         <span className="ms-1">&copy; 2024 AllyArc.</span>
       </div>
