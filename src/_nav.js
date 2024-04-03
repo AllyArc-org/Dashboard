@@ -46,6 +46,22 @@ const _nav = [
     href: '#/student/studentPage',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
+  {
+    component: CNavTitle,
+    name: 'Sample',
+  },
+  {
+    component: CNavItem,
+    name: 'Page One',
+    href: '#/sample/pageOne',
+    icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Page Two',
+    href: '#/sample/pageTwo',
+    icon: <CIcon icon={cilLibraryAdd} customClassName="nav-icon" />,
+  },
 ]
 
 export default _nav

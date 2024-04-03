@@ -11,6 +11,10 @@ const AddStudent = React.lazy(() => import('./views/student/addStudent/addStuden
 const StudentPage = React.lazy(() => import('./views/student/studentPage/studentPage'))
 const StudentSinglePage = React.lazy(() => import('./views/student/studentPage/studentSinglePage'))
 
+// Sample
+const PageOne = React.lazy(() => import('./views/sample/pageOne/pageOne'))
+const PageTwo = React.lazy(() => import('./views/sample/pageTwo/pageTwo'))
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -25,6 +29,9 @@ const routes = [
     element: StudentSinglePage,
   },
   { path: '/student/addStudent', name: 'Add Student', element: AddStudent },
+  { path: '/sample', name: 'Sample', element: PageOne, exact: true },
+  { path: '/sample/pageOne', name: 'Page One', element: PageOne },
+  { path: '/sample/pageTwo', name: 'Page Two', element: PageTwo },
 ]
 
 export default routes
