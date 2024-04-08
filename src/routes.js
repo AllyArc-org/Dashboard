@@ -3,7 +3,8 @@ import React from 'react'
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 
 // Question
-const AddQuestion = React.lazy(() => import('./views/question/addQuestion/addQuestion'))
+const AddGenQuestion = React.lazy(() => import('./views/question/addQuestion/addGenQuestion'))
+const AddCustomQuestion = React.lazy(() => import('./views/question/addQuestion/addCustomQuestion'))
 const QuestionPage = React.lazy(() => import('./views/question/questionPage/questionPage'))
 
 // Student
@@ -20,7 +21,8 @@ const routes = [
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/question', name: 'Question', element: QuestionPage, exact: true },
   { path: '/question/questionPage', name: 'Question Page', element: QuestionPage },
-  { path: '/question/addQuestion', name: 'Add Question', element: AddQuestion },
+  { path: '/question/addCustomQuestion', name: 'Custom Question', element: AddCustomQuestion },
+  { path: '/question/addGenQuestion', name: 'Generated Question', element: AddGenQuestion },
   { path: '/student', name: 'Student', element: StudentPage, exact: true },
   { path: '/student/studentPage', name: 'Student Page', element: StudentPage },
   {

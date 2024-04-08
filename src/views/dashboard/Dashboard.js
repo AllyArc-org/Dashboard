@@ -215,7 +215,7 @@ const Dashboard = () => {
             Add Student
           </CButton>
         </Link>{' '}
-        <Link to="/question/addQuestion">
+        <Link to="/question/addCustomQuestion">
           <CButton color="primary" size="sm">
             Add Question
           </CButton>

@@ -1,7 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import { cilSpeedometer, cilCursor, cilPencil, cilAddressBook, cilLibraryAdd } from '@coreui/icons'
-import { CNavItem, CNavTitle } from '@coreui/react'
+import { CNavItem, CNavTitle, CNavGroup } from '@coreui/react'
 
 const _nav = [
   {
@@ -25,10 +25,22 @@ const _nav = [
     icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
   },
   {
-    component: CNavItem,
-    name: 'Add Question',
-    href: '#/question/addQuestion',
+    component: CNavGroup,
+    name: 'Add Questiopns',
+    to: '#/question',
     icon: <CIcon icon={cilLibraryAdd} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Custom Question',
+        href: '#/question/addCustomQuestion',
+      },
+      {
+        component: CNavItem,
+        name: 'Generated Question',
+        href: '#/question/addGenQuestion',
+      },
+    ],
   },
   {
     component: CNavTitle,
@@ -46,22 +58,22 @@ const _nav = [
     href: '#/student/studentPage',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
-  {
-    component: CNavTitle,
-    name: 'Sample',
-  },
-  {
-    component: CNavItem,
-    name: 'Page One',
-    href: '#/sample/pageOne',
-    icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
-  },
-  {
-    component: CNavItem,
-    name: 'Page Two',
-    href: '#/sample/pageTwo',
-    icon: <CIcon icon={cilLibraryAdd} customClassName="nav-icon" />,
-  },
+  // {
+  //   component: CNavTitle,
+  //   name: 'Sample',
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Page One',
+  //   href: '#/sample/pageOne',
+  //   icon: <CIcon icon={cilCursor} customClassName="nav-icon" />,
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Page Two',
+  //   href: '#/sample/pageTwo',
+  //   icon: <CIcon icon={cilLibraryAdd} customClassName="nav-icon" />,
+  // },
 ]
 
 export default _nav

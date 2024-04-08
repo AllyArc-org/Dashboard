@@ -4,6 +4,7 @@ import { CChartPie } from '@coreui/react-chartjs'
 import React from 'react'
 import { CButton, CCard, CCardBody, CCol, CRow, CCardHeader } from '@coreui/react'
 import { useParams } from 'react-router-dom'
+import ChatHistory from './ChatHistory'
 
 function StudentSinglePage() {
   const handleClick = () => {
@@ -26,8 +27,10 @@ function StudentSinglePage() {
   } = useParams()
   return (
     <>
-      <CRow xs={{ cols: 2 }} md={{ cols: 2 }}>
-        <CCol xs={12}>
+      <CRow>
+        {/* Use a single row to contain all columns */}
+        <CCol xs={12} md={6}>
+          {/* 1/3 width on medium+ screens */}
           <CCard className="mb-4">
             <CCardHeader component="h5" className="p-3">
               <span className="p-3">
@@ -82,7 +85,7 @@ function StudentSinglePage() {
             </CCardBody>
           </CCard>
         </CCol>
-        <CCol xs={12}>
+        <CCol xs={12} md={6}>
           <CCard className="mb-4">
             <CCardHeader component="h5" className="p-3">
               <span className="p-3">
@@ -112,6 +115,10 @@ function StudentSinglePage() {
               />
             </CCardBody>
           </CCard>
+        </CCol>
+        <CCol xs={12}>
+          {/* 2/3 width on medium+ screens */}
+          <ChatHistory studentContact={contact} studentGrade={grade} studentName={name} />
         </CCol>
       </CRow>
     </>

@@ -1,4 +1,5 @@
-import AddQuestion from './addQuestion'
+import AddCustomQuestion from './addQuestion/addCustomQuestion'
+import AddGenQuestion from './addQuestion/addGenQuestion'
 import QuestionPage from './questionPage'
 
-export { AddQuestion, QuestionPage }
+export { AddCustomQuestion, AddGenQuestion, QuestionPage }

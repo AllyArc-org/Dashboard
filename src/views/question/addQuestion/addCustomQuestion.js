@@ -15,7 +15,7 @@ import {
   CFormTextarea,
 } from '@coreui/react'
 
-function AddQuestionPage() {
+function AddCustomQuestionPage() {
   const [insertGrade, setInsertGrade] = useState('')
   const [insertTopic, setInsertTopic] = useState('')
   const [insertQuestion, setInsertQuestion] = useState('')
@@ -172,4 +172,4 @@ function AddQuestionPage() {
   )
 }
 
-export default AddQuestionPage
+export default AddCustomQuestionPage
