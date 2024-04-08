@@ -19,9 +19,9 @@ jobs:
       - name: Build
         run: |
           if [ ${{ github.ref }} = 'refs/heads/staging' ]; then
-            GENERATE_SOURCEMAP=false npm run build
+            GENERATE_SOURCEMAP=false REACT_APP_OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} npm run build
           else
-            npm run build
+            REACT_APP_OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} npm run build
           fi
         env:
           CI: false
