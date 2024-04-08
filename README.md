@@ -10,7 +10,7 @@ The application on the frontend is built using React.js which uses the CoreUI li
 - [Watch Project Pitch](https://drive.google.com/file/d/1_EvCTHOZ-4KDIIct-8xWqlCbv93jrlt6/view?usp=sharing)
 - [Watch Project Demo](https://drive.google.com/file/d/1fL46rUyBIwAyp6vIvjx1S4L7XvaRdVd-/view?usp=sharing)
 
-> Note: The following installation focuses on running the frontend of the application. Click [here](https://github.com/AllyArc/AllyArc-Chatbot) to checkout the process to run the chatbot.
+> Note: The following installation focuses on running the frontend of the application. Click [here](https://github.com/AllyArc-org/Chatbot) to checkout the process to run the chatbot.
 
 ## What you need
 
