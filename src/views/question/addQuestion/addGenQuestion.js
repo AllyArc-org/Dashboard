@@ -134,8 +134,8 @@ function AddQuestionPage() {
             score: insertScore,
           })
 
-          console.log('Waiting for 2 seconds before processing the next question...')
-          await new Promise((resolve) => setTimeout(resolve, 2000))
+          console.log('Waiting for 1 second before processing the next question...')
+          await new Promise((resolve) => setTimeout(resolve, 1000))
         } catch (error) {
           console.error('Error:', error.message)
         }
